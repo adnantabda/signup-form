@@ -13,13 +13,13 @@ h2{
     /* margin-left: 15px; */
     font-family: adnan-virgo;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .left-side{
     height: 100vh;
     width: 30vw;
-    background-image: linear-gradient( 120deg,pink , purple);
+    background-color: rgb(11, 145, 145);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,8 @@ h2{
     flex-direction: column;
     height: 100vh;
     width: 70vw;
-    background-color:  #070127;
+    /* background-color: gray; */
+    background-color: #8635fc;
     align-items: center;
     justify-content: center;
 }
@@ -42,11 +43,9 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: auto;
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.226);
     text-align: center;
-    
+    width: 100%;
 }
 
 img{
@@ -83,10 +82,9 @@ span{
 }
 
 form{
-    max-width: 40vw;
     font-size: .9rem;
     color: #fff;
-    background-image: linear-gradient(120deg , purple , brown);
+
     font-family: adnan-virgo;
     border-radius: 8px;
     padding: 8px;
