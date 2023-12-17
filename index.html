@@ -40,7 +40,7 @@
                 </div>
                 <div class="info-container">
                     <label for="last_name">LAST NAME</label>
-                    <input type="text" name="first_name" id="first_name" required>
+                    <input type="text" name="first_name" id="last_name" required>
                 </div>
             </fieldset>
 
@@ -69,28 +69,33 @@
                 </di>
             </fieldset>
             <fieldset>
-            <button>Create account</button>
-        </fieldset>
-
+            </fieldset>
+            
         </form>
+        <button>Create account</button>
     </div>
 <script>
-    const password1 = document.querySelector("#password")
-    const confirm_password = document.querySelectorAll("#confirm_password")
-    const password = document.querySelector(".password")
+    const passwords = document.querySelectorAll(".password")
     const submit = document.querySelector("button")
-    submit.addEventListener("click" , ()=>{
-        if (password1.value !== confirm_password.value ) {
-            password.forEach((pass)=>{
 
-                password.style.border = "1px solid red"
+    submit.addEventListener('click' , ()=>{
+        value1 = passwords[0].value
+        value2 = passwords[1].value
+        if (value1 === value2 ){
+            passwords[1].style.border = '1px solid gray'
+            passwords[0].style.border = '1px solid gray'
 
 
-            })
 
+        }else{
+            
+            passwords[1].style.border = '1px solid red'
+            passwords[0].style.border = '1px solid red'
         }
-    })
+        console.log(value1 !== value2)
 
+    })
+    
 
 </script>
 
