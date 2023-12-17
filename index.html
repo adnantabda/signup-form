@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup form</title>
-    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,11 +61,11 @@
                 <div class="info-container">
 
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" required>
+                    <input class="password" type="password" name="password" id="password" required>
                 </div>
                 <di class="info-container">
                     <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm_password" id="confirm_password" required>
+                    <input  class="password" type="password" name="confirm_password" id="confirm_password" required>
                 </di>
             </fieldset>
             <fieldset>
@@ -74,7 +74,25 @@
 
         </form>
     </div>
+<script>
+    const password1 = document.querySelector("#password")
+    const confirm_password = document.querySelectorAll("#confirm_password")
+    const password = document.querySelector(".password")
+    const submit = document.querySelector("button")
+    submit.addEventListener("click" , ()=>{
+        if (password1.value !== confirm_password.value ) {
+            password.forEach((pass)=>{
 
+                password.style.border = "1px solid red"
+
+
+            })
+
+        }
+    })
+
+
+</script>
 
 </body>
 
